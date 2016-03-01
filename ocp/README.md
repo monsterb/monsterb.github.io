@@ -4,5 +4,5 @@
 <pre>
 Maintainer: monsterb
 Contact: UNIX.S3C (at) gmail (dot) com
-URL: <a href="http://monsterb.github.io">https://monsterb.github.io</a>
+URL: <a href="http://monsterb.github.io">http://monsterb.github.io</a>
 </pre>
