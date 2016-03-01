@@ -1,0 +1,25 @@
+Title: Get your external IP address from the command line.
+Date: Feb. 17, 2013
+URL: http://monsterb.org/notes/notes002.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+
+Get your external IP address from the command line.
+
+This one is from BSDGurl. Dependencies: curl,wget
+
+$ wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+
+
+
+These two are from Aaron B. The first one (ftp -V -o - http://ip.qbit.io) works with base OpenBSD and FreeBSD with zero external dependencies! The second one needs 'curl'.
+
+$ ftp -V -o - http://ip.qbit.io
+
+and
+
+$ curl ifconfig.me
+
+You can find a few more at http://www.commandlinefu.com/commands/view/5427/get-your-external-ip-address

@@ -1,0 +1,170 @@
+Title: Installing and using APCUPSD on OpenBSD 5.2
+Date: Feb. 16, 2013
+URL: http://monsterb.org/notes/notes004.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+Installing and using APCUPSD on OpenBSD 5.2
+
+1.) Install binary package(s).
+2.) Configure Apcupsd.
+3.) Start daemon at boot time.
+
+ I purchased a "Uninterruptible Power Supply" to protect my modem, router, and server from power source failure (protects connected loads from surges, spikes, lightning, and other power disturbances). I found a great deal on the "APC Back-UPS ES 550MC". Setting it up on OpenBSD 5.2 is drop dead simple. All you need is Apcupsd (a daemon for controlling APC UPSes).
+
+
+
+1.) Install Apcupsd:
+
+
+# pkg_add apcupsd
+
+ 
+
+2.)  Configure /etc/apcupsd/apcupsd.conf:
+
+ Now it's time to edit the config file. Use your editor of choice and load up /etc/apcupsd/apcupsd.conf. My editor of choice is nano.
+
+
+# nano /etc/apcupsd/apcupsd.conf
+
+
+ Scroll down to the "UPSCABLE <cable>" section and define the type of cable connecting the UPS to your computer. I use "usb" for my model. Most new Uniterruptible Power Supplies are USB.
+
+
+UPSCABLE usb
+
+ Comment from acupsd.conf: "To get apcupsd to work, in addition to defining the cable above, you must also define a UPSTYPE, which corresponds to the type of UPS you have (see the Description for more details). You must also specify a DEVICE, sometimes referred to as a port. For USB UPSes, please leave the DEVICE directive blank. For other UPS types, you must specify an appropriate port or address." 
+ Scroll down to UPSTYPE and change it to the appropriate port or address. The choices are usb, net, snmp, netsnmp, dumb, and pcnet. Once again mine is usb.
+
+
+UPSTYPE usb
+DEVICE
+
+ 
+
+3.) Start Acpupsd:
+
+
+# apcupsctl start
+
+ 
+
+4.) Edit /etc/rc.local so that the apcupsd service will start when the system starts up. In the rc.local file add the following:
+
+
+if [ -x /usr/local/sbin/apcupsd ]; then
+        echo 'Starting apcupsd'; /usr/local/sbin/apcupsd
+fi
+ 
+
+ 
+
+5.) Documentation, Commands, and Monitoring:
+
+ To monitor the events of your UPS you should enter (in a separate terminal) the command ( tail -f /var/log/apcupsd.events ) and you may watch what is going on:
+
+
+# tail -f /var/log/apcupsd.events
+2013-02-16 17:18:15 -0600  apcupsd 3.14.10 (13 September 2011) openbsd startup succeeded
+
+
+Ctrl-C to exit tail.
+
+
+You can also check /var/log/apcupsd.events:
+
+
+# cat /var/log/apcupsd.events
+
+
+2013-02-16 17:18:15 -0600  apcupsd 3.14.10 (13 September 2011) openbsd startup succeeded
+
+ Type "apc" and hit Tab key twice and you will see the Apcupsd commands. Four commands should be listed (apcaccess, apctest, apcupsctl, and apcupsd):
+
+
+# apc
+apcaccess  apctest  apcupsctl apcupsd
+
+ "apcaccess" is a program that permits you to print out the complete status of your UPS. Take a look at the apcaccess output of my APC Back-UPS ES 550MC:
+
+
+# apcaccess
+APC      : 001,034,0884
+DATE     : 2013-02-16 21:02:53 -0600 
+HOSTNAME : puffy.my.domain
+VERSION  : 3.14.10 (13 September 2011) openbsd
+UPSNAME  : puffy.my.domain
+CABLE    : USB Cable
+DRIVER   : USB UPS Driver
+UPSMODE  : Stand Alone
+STARTTIME: 2013-02-16 17:18:13 -0600 
+MODEL    : Back-UPS ES 550MC
+STATUS   : ONLINE
+LINEV    : 121.0 Volts
+LOADPCT  :   8.0 Percent Load Capacity
+BCHARGE  : 100.0 Percent
+TIMELEFT :  31.4 Minutes
+MBATTCHG : 5 Percent
+MINTIMEL : 3 Minutes
+MAXTIME  : 0 Seconds
+SENSE    : Medium
+LOTRANS  : 092.0 Volts
+HITRANS  : 139.0 Volts
+ALARMDEL : 30 seconds
+BATTV    : 13.5 Volts
+LASTXFER : No transfers since turnon
+NUMXFERS : 0
+TONBATT  : 0 seconds
+CUMONBATT: 0 seconds
+XOFFBATT : N/A
+STATFLAG : 0x07000008 Status Flag
+SERIALNO : 3B1020X12871 
+BATTDATE : 2010-05-11
+NOMINV   : 120 Volts
+NOMBATTV :  12.0 Volts
+FIRMWARE : 885.K1 .D USB FW:K1
+END APC  : 2013-02-16 21:03:35 -0600
+# 
+ 
+
+ "apctest" is a program that allows you to talk directly to your UPS and run certain low-level tests, display all know values from the UPS's EEPROM, perform a battery runtime calibration, program the EEPROM (serial connection only), and enter in TTY mode with the UPS. You have to stop Apcupsd before running apctest ( apcupsctl stop ):
+
+
+# apcupsctl stop
+Stopping apcupsd power management  Done.
+
+#apctest                                                                                                                                                                                                  
+2013-02-16 21:30:50 apctest 3.14.10 (13 September 2011) openbsd
+Checking configuration ...
+Attached to driver: usb
+sharenet.type = Network & ShareUPS Disabled
+cable.type = USB Cable
+mode.type = USB UPS Driver
+Setting up the port ...
+Doing prep_device() ...
+
+You are using a USB cable type, so I'm entering USB test mode
+Hello, this is the apcupsd Cable Test program.
+This part of apctest is for testing USB UPSes.
+
+Getting UPS capabilities...SUCCESS
+
+Please select the function you want to perform.
+
+1)  Test kill UPS power
+2)  Perform self-test
+3)  Read last self-test result
+4)  View/Change battery date
+5)  View manufacturing date
+6)  View/Change alarm behavior
+7)  View/Change sensitivity
+8)  View/Change low transfer voltage
+9)  View/Change high transfer voltage
+10) Perform battery calibration
+11) Test alarm
+12) View/Change self-test interval
+ Q) Quit
+
+Select function number: 

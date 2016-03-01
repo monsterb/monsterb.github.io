@@ -1,0 +1,20 @@
+Title: Using powerd to control the CPU speed automatically on FreeBSD.
+Date: Apr. 04, 2012
+URL: http://monsterb.org/notes/notes000.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+powerd on FreeBSD
+
+Using powerd to control the CPU speed automatically on FreeBSD.
+
+
+1.) Insert the following line into /etc/rc.conf:
+
+powerd_enable="YES"
+
+
+2.) Run /etc/rc.d/powerd start:
+
+# /etc/rc.d/powerd start

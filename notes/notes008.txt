@@ -1,0 +1,62 @@
+Title: My notes on setting up and using Git/GitHub on openSUSE Leap 42.1.
+Date: Feb. 21th, 2016
+URL: http://monsterb.org/notes/notes008.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+# = root
+$ = user
+
+
+
+1.) Install Git:
+
+# zypper install git
+
+
+
+2.) Create a folder in your home directory for your projects:
+
+$ cd /home/bill/
+
+$ mkdir Projects
+
+$ cd Projects
+
+
+
+3.) Make your project directory (Projects) a Git repository:
+
+$ git init
+
+
+
+4.) Setup your username and email address that you signed up with on GitHub:
+
+$ git config --global user.name "bill"
+
+$ config --global user.email "bill@mail.com"
+
+
+
+5.) Clone your repository that you created on GitHub:
+
+$ git clone https://github.com/bill/myprojectrepo.git
+
+
+
+6.) Add files to your GitHub repository:
+
+$ git add filename.txt
+
+$ git commit -m "This is where you put a message about the file your uploading."
+
+$ git push origin master
+
+
+These are just my notes to refresh my memory. If your looking for a how-to or more information please check out 
+the following links.
+
+GitHub Help https://help.github.com/
+
+lifehacker - How the Heck Do I Use GitHub? https://lifehacker.com/5983680/how-the-heck-do-i-use-github

@@ -1,0 +1,40 @@
+Title: Format USB Flash Drive and Burn backbox-4.4-i386.iso to USB Flash Drive on Debian 8.
+Date: Dec. 29th, 2015
+URL: http://monsterb.org/notes/notes007.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+1.) How do I figure out which /dev is a USB Flash Drive?
+    a.) Use one of the following Linux commands:
+
+     df, blkid, fdisk -l, lsblk
+
+
+ 2.) How do I format a USB Flash Drive with FAT32 file system on Debian 8?
+     a.) Install dosfstools (utilities for making and checking MS-DOS FAT filesystems):
+     
+     # apt-get install dosfstools
+     
+     b.) Format the USB Flash Drive with FAT32 file system:
+     
+     # mkfs.vfat -n 'BackBox' -I /dev/sdc1
+ 	  
+ 	  
+ 3.) This is a quote from the BackBox wiki: "BackBox doesn't provide an hybrid ISO image yet (i.e. an image that can be directly copied to an USB device using for example dd utility), 
+ even if this is being worked out. Meanwhile it's possible to use Isohybrid from the Syslinux Project to create it on your own."
+
+     # apt-get install syslinux syslinux-utils
+
+     # isohybrid backbox-4.4-i386.iso
+     
+     
+ 4.) Copy backbox-4.4-i386.iso to USB Flash Drive:
+
+     # dd if=backbox-4.4-i386.iso of=/dev/sdc bs=4M; sync
+     
+
+Links:
+BackBox http://backbox.org/
+Debian https://www.debian.org/
+dosfstools https://github.com/dosfstools/dosfstools
+The Syslinux Project http://www.syslinux.org/wiki/index.php/The_Syslinux_Project

@@ -1,0 +1,66 @@
+Title: Manually install the proprietary Nvidia GeForce video drivers on openSUSE 13.1.
+Date: Dec. 08, 2013
+URL: http://monsterb.org/notes/notes005.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+Manually install the proprietary Nvidia GeForce video drivers on openSUSE 13.1.
+
+Use this hard to follow how-to at your own risk. This worked for me on openSUSE 13.1 64bit with kernel 3.11 and Nvidia driver 331.20.
+
+1.) Download Nvidia GeForce drivers:
+
+Go to http://www.geforce.com/drivers and download the proper binary drivers for your Nvidia GeForce model.
+
+Make the binary executable:
+
+$ chmod +x NVIDIA-Linux-x86_64-331.20.run
+
+
+
+
+2.) Install the dependencies for the NVIDIA driver:
+
+gcc, make, and kernel-devel
+
+$ sudo zypper install gcc make kernel-devel
+
+
+
+3.) Exit out of X to install drivers:
+
+The easiest way is to select "Console login" from gui login screen (kdm) or use key combo Ctrl-Alt-F1.
+
+
+
+4.) Disable Kernel Mode Setting (KMS):
+
+Step 1: Edit /etc/sysconfig/kernel and set "NO-KMS-IN-INITRD = yes".
+
+Run mkinitrd to re-create the necessary initrd file:
+
+# mkinitrd
+
+Step 2: Edit the file /etc/default/grub and add nomodeset to GRUB_CMDLINE_LINUX_DEFAULT=. Run the command "grub2-mkconfig" to re-create the /boot/grub2/grub.cfg file.
+
+# grub2-mkconfig
+
+
+
+5.) Blacklist nouveau to prevent the proprietary NVIDIA driver from conflicting with the default nouveau driver.
+
+Add "blacklist nouveau" to /etc/modprobe.d/50-blacklist.conf
+
+
+
+6.) Install the binary driver:
+
+# ./NVIDIA-Linux-x86_64-331.20.run
+
+
+
+Finally! Reboot.
+
+# reboot
+

@@ -1,0 +1,45 @@
+Title: Install, Configure, Set as Default, and Restart BASH session on OpenBSD.
+Date: Feb. 23, 2013
+URL: http://monsterb.org/notes/notes003.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+
+Install, Configure, Set as Default, and Restart BASH session on OpenBSD.
+
+1.) Install binary package:
+
+    # pkg_add -i -v bash
+
+
+
+2.) Find BASH path: 
+
+    # which bash
+
+Output:
+
+    /usr/local/bin/bash
+
+
+
+3.) Set your user shell to BASH:
+
+    # chsh -s /usr/local/bin/bash monsterb
+
+Set root shell to BASH:
+
+    # chsh -s /usr/local/bin/bash root
+
+
+
+4.) To customize your BASH prompt add this line to .profile:
+
+    PS1="\u@\h:\w$ "; export PS1
+
+
+
+5.) Restart BASH session for changes to take effect:
+
+    $ . .profile 
