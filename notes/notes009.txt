@@ -38,6 +38,7 @@ At the fdisk prompt, delete old partitions and create a new one:
 4.) Download and extract the root filesystem (as root, not via sudo):
 
 # wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.tar.gz
+# pacman -S bsdtar
 # bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
 # sync
 
@@ -56,3 +57,13 @@ At the fdisk prompt, delete old partitions and create a new one:
 Use the serial console or SSH to the IP address given to the board by your router.
 Login as the default user alarm with the password alarm.
 The default root password is root.
+
+
+______________________________________________________________________________________
+
+
+Things to do after installation:
+
+1.) Set Time Zone:
+
+# timedatectl set-timezone America/Chicago
