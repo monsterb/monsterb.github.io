@@ -1,6 +1,6 @@
 Title: My notes on setting up and using Git/GitHub on openSUSE Leap 42.1.
 Date: Feb. 21th, 2016
-URL: http://monsterb.org/notes/notes008.txt
+URL: https://monsterb.github.io/notes/notes008.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

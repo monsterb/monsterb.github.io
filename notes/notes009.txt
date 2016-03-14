@@ -1,6 +1,7 @@
 Title: Install Arch Linux (Alarm) on Raspberry Pi (ARMv6).
 Date: Mar. 13th, 2016
-URL: http://monsterb.org/notes/notes009.txt
+URL: https://monsterb.github.io/notes/notes009.txt
+License: unknown
 Source: https://archlinuxarm.org/platforms/armv6/raspberry-pi
 Author: monsterb
 

@@ -1,6 +1,6 @@
 Title: Using powerd to control the CPU speed automatically on FreeBSD.
 Date: Apr. 04, 2012
-URL: http://monsterb.org/notes/notes000.txt
+URL: https://monsterb.github.io/notes/notes000.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

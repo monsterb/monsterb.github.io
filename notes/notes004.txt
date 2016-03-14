@@ -1,6 +1,6 @@
 Title: Installing and using APCUPSD on OpenBSD 5.2
 Date: Feb. 16, 2013
-URL: http://monsterb.org/notes/notes004.txt
+URL: https://monsterb.github.io/notes/notes004.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

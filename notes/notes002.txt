@@ -1,6 +1,6 @@
 Title: Get your external IP address from the command line.
 Date: Feb. 17, 2013
-URL: http://monsterb.org/notes/notes002.txt
+URL: https://monsterb.github.io/notes/notes002.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

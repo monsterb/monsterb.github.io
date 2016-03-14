@@ -1,6 +1,6 @@
 Title: monsterb's Famous Quad Bean Salad 
 Date: Nov. 10, 2012
-URL: http://monsterb.org/notes/notes006.txt
+URL: https://monsterb.github.io/notes/notes006.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

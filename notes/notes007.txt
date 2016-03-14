@@ -1,6 +1,6 @@
 Title: Format USB Flash Drive and Burn backbox-4.4-i386.iso to USB Flash Drive on Debian 8.
 Date: Dec. 29th, 2015
-URL: http://monsterb.org/notes/notes007.txt
+URL: https://monsterb.github.io/notes/notes007.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

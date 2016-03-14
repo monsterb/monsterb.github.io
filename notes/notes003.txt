@@ -1,6 +1,6 @@
 Title: Install, Configure, Set as Default, and Restart BASH session on OpenBSD.
 Date: Feb. 23, 2013
-URL: http://monsterb.org/notes/notes003.txt
+URL: https://monsterb.github.io/notes/notes003.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

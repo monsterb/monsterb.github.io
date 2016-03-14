@@ -1,6 +1,6 @@
 Title: One Giant Leap for Frogkind
 Date: Dec. 04, 2013
-URL: http://monsterb.org/notes/notes001.txt
+URL: https://monsterb.github.io/notes/notes001.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 

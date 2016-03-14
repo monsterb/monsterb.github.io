@@ -1,6 +1,6 @@
 Title: Manually install the proprietary Nvidia GeForce video drivers on openSUSE 13.1.
 Date: Dec. 08, 2013
-URL: http://monsterb.org/notes/notes005.txt
+URL: https://monsterb.github.io/notes/notes005.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 
