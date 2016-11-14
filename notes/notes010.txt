@@ -1,0 +1,144 @@
+Title: HazMat Pratice Questions gathered from the interwebs.
+Date: Nov. 14th, 2016
+URL: https://monsterb.github.io/notes/notes010.txt
+License: unknown
+Source: http://driving-tests.org/ (Questions 1 thru 22), 
+Author: monsterb
+
+----------
+
+Q1: Which hazard classes must you NEVER smoke, or perform any activity involving fire, within 25 feet of?
+
+A1: While you should not add the risk of smoking in extremely close proximity of any class of hazardous material, the additional rules are: no smoking within 25 feet of classes 3 and 2.1 (flammable materials and gases) and no smoking or holding a lighted smoking object such as a cigar or a pipe within 25 feet of classes 1, 3, 4, or 4.2 (explosives, flammable liquids and solids, and spontaneous combustibles).
+
+----------
+
+Q2: In what location must you keep your shipping papers which describe any hazardous materials?
+
+A2: Your shipping papers for hazardous materials must be visible and accessible to emergency personnel at all times, which includes when you are out of the vehicle. This is why, when you are away from your truck, they must be placed on your driver's seat in easy reach for emergencies.
+
+----------
+
+Q3: A safe haven is?
+
+A3: The term “safe haven” refers to a place, created by local authorities, where you can safely leave your truck unattended while you are carrying explosive material. This solves a trucking dilemma that has often left drivers to make somewhat dangerous decisions, such as driving through the night so that they can stay with their load.
+
+----------
+
+Q4: What are shippers trying to accomplish when they package the material?
+
+A4: The regulations for hazardous materials are designed so that shippers make packages easy for drivers, destination personnel, and emergency personnel to identify the contents quickly and easily.
+
+----------
+
+Q5: What is a technical name?
+
+A5: The technical name is one used by scientists, which appears in journals, articles, and technical handbooks. It provides a standard terminology for referring to various dangerous substances, instead of using anyone's slang terms, which can vary (to dangerous effects) from region to region.
+
+----------
+
+Q6: The Emergency Response Guidebook (ERG):
+
+A6: The Emergency Response Guidebook, or ERG, was created by the Department of Transportation and is used by emergency personnel such as firefighters and paramedics to respond to trucking emergencies. The guidebook is indexed by hazardous material identification number, which is why it is very important that shipping papers are labeled correctly.
+
+----------
+
+Q7: Where are the two main places where the hazardous material identification number appears?
+ 
+A7: The two main places where you must keep the hazardous material identification numbers are on your shipping papers and on the packages themselves, as these are the places that emergency personnel have been trained to check immediately.
+
+----------
+
+Q8: What action should you take if there is no phone available and you discover your hazardous materials shipment leaking at a rest stop?
+
+A8: Cleaning up a spill, a huge contamination in particular, would be incredibly expensive. If you notice a leak, therefore, stop as soon as you possibly can and get off the road. Stay with your vehicle, due to liability and safety issues, and send someone else for help. As you must send a large amount of vital information--including where you are, your direction of travel, the hazard class and ID numbers, your carrier's location, the package's destination, and more--make sure you write it all down.
+
+----------
+
+Q9: How often should you check the tires on a placarded trailer that has dual tires?
+
+A9: If you have a trailer with placards and dual tires, you should check your tires at the beginning of each day and each time that you stop for any reason, whether that's for a rest or to refuel. Remember that you must use a tire pressure gauge to get an accurate reading.
+
+----------
+
+Q10: If you are carrying Division 1.2 or 1.3 materials, how far away must you park from the traveled portion of the roadway?
+
+A10: If you are carrying explosive materials from Division 1.2 or 1.3, never park your vehicle less than five (5) feet away from a traveled section of the road or highway. If you cannot make it even five feet, then it is a very serious emergency indeed, and you should be calling emergency services personnel if you have explosives on board.
+
+----------
+
+Q11: The two other places where the hazardous identification number must appear are?
+
+A11: In addition to the main two items that you must have the hazardous identification number on, you must also display it on the cargo tanks and on all bulk packaging.
+
+----------
+
+Q12: If you are already carrying 100 pounds of silver cyanide, what precautions must you take if you are given papers at a dock to carry 100 cartons of battery acid?
+
+A12: Silver cyanide and battery acid are on the list of products that cannot travel together for safety reasons (check the "Do Not Load" table in your manual). Division 6.1 materials like silver cyanide cannot be loaded with acids or corrosive materials which could combine to make hydrocyanic acid.
+
+----------
+
+Q13: Which of the following hazard classes utilizes a transport index in order to determine how much of it can be loaded on a single vehicle for transport?
+
+A13: Class 7, radioactive materials, must be controlled by a transport index that tells each transport company and truck driver how much they can carry, as the packages themselves are emitting waves that could contaminate the rest of the load.
+
+----------
+
+Q14: What is the purpose of a driver placarding his or her vehicle?
+
+A14: Communicating risk.
+
+----------
+
+Q15: Cargo tanks are?
+
+A15: Cargo tanks are the style of tanks that are permanently attached to your commercial vehicle. There are many different styles used for a variety of different materials.
+
+----------
+
+Q16: What materials would be an acceptable floor liner for moving Division 1.1 or 1.2 materials?
+
+A16: The floor lining for moving materials from either categories 1.1 or 1.2 must be either non-ferrous metals or non-metallic materials. Both stainless steel and carbon steel represent ferrous metals.
+
+----------
+
+Q17: Your engine runs a pump when you are delivering compressed gas. Should you turn off your engine before or after you unhook the hoses after finishing that delivery?
+
+A17: If your engine is required to be on when you are pumping a load of compressed gas, you are always adding an extra layer of danger to a situation. Make sure that you turn off the engine before you unhook any hoses, as soon as the delivery is completed.
+
+----------
+
+Q18: What is the main difference between a portable tank and a cargo tank?
+
+A18: There are several key differences between cargo tanks and portable tanks, but the key facts have to do with the permanence of cargo tanks. Since they are stuck to commercial vehicles permanently, they will be filled while they are on the vehicle, and they do not need to display an owner's name separately. A portable tank can be filled on or off a vehicle, then attached, and must display the owner or lessee's name.
+
+----------
+
+Q19: A placarded vehicle must carry what type of fire extinguisher?
+
+A19: One with a rating 10 A:B minimum. All placarded vehicles are required to have a fire extinguisher certified by the Underwriters Laboratory (often written as UL) to put out a minimum 10 square feet of a class B fire, which includes almost all flammable liquids, and is non-conducive due to its C rating.
+
+----------
+
+Q20: Do you need to stop before a railroad crossing if you are hauling 100 pounds of Division 4.3 materials?
+
+A20: Yes. If your vehicle is placarded, you must stop from 15 to 50 feet from the nearest rail before all railroad crossings. Once you have done this, proceed when you are sure there is no train coming, and do not shift while you are on the tracks.
+
+----------
+
+Q21: How far away must you stay from a bridge, tunnel, or building if you are carrying Division 1.2 or 1.3 materials?
+
+A21: 300 Feet. When driving with a load of 1.1, 1.2, or 1.3 hazardous materials, which constitute explosives, you must park at least 300 feet away from any bridge, tunnel, or structure. You must maintain the same distance from any gathering place or open fire.
+
+----------
+
+Q22: The total transport index of all radioactive material packages in a single vehicle must not exceed ____.
+
+A22: 50
+
+__________
+
+Q23: 
+
+A23:
