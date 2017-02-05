@@ -35,7 +35,7 @@ $ git init
 
 $ git config --global user.name "bill"
 
-$ config --global user.email "bill@mail.com"
+$ git config --global user.email "bill@mail.com"
 
 
 
