@@ -169,7 +169,7 @@ __________
 
 Q26: What capacity must a single container be able to contain to be considered a bulk packaging?
 
-A26: To be considered a bulk packaging, the single container must have a capacity of at least 119 gallons.
+A26: 119 gallons;  be considered a bulk packaging, the single container must have a capacity of at least 119 gallons.
 
 __________
 
