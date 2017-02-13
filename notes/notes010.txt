@@ -1,8 +1,9 @@
 Title: HazMat Pratice Questions gathered from the interwebs.
 Date: Nov. 14th, 2016
+Revised: Feb. 13th, 2017
 URL: https://monsterb.github.io/notes/notes010.txt
 License: unknown
-Source: http://driving-tests.org/ (Questions 1 thru 22), 
+Sources: http://driving-tests.org/ (Questions 1 thru 22), https://uniontestprep.com/ (Questions 23 thru 32)
 Author: monsterb
 
 ----------
@@ -139,6 +140,76 @@ A22: 50
 
 __________
 
-Q23: 
+Q23: What forms can hazardous materials come in?
 
-A23:
+A23: Materials that are considered hazardous can come in all three “states of matter”-solids, liquids, and gases. These liquids can be both combustible and flammable.
+
+__________
+
+Q24: How many hazard classes are there?
+
+A24: In total, there are 9 hazard classes. These classes reflect the risk associated with the individual products.
+
+Class 1 - EXPLOSIVES
+Class 2 - GASES
+Class 3 - FLAMMABLE LIQUIDS
+Class 4 - FLAMMABLE SOLIDS
+Class 5 - OXIDIZING SUBSTANCES
+Class 6 - TOXIC SUBSTANCES and INFECTIOUS SUBSTANCES
+Class 7 - RADIOACTIVE MATERIAL
+Class 8 - CORROSIVES
+Class 9 - MISCELLANEOUS DANGEROUS GOODS
+__________
+
+Q25: How far away must placards be from other markings?
+
+A25: At least 3 inches; Placards must at least be 3 inches away from other markings so that they are as visible as possible-which helps with the safety of all those around the vehicle.
+
+__________
+
+Q26: What capacity must a single container be able to contain to be considered a bulk packaging?
+
+A26: To be considered a bulk packaging, the single container must have a capacity of at least 119 gallons.
+
+__________
+
+Q27: You should never smoke anywhere near your vehicle when transporting which class of materials?
+
+A27: Never smoke anywhere near your vehicle if you are transporting any materials that are Class 1 (explosives), Division 2.1 (flammable gas), Class 3 (flammable liquids), Class 4 (flammable solids), or Class 5 (oxidizers.)
+
+__________
+
+Q28: The transport index of a material is 1.1. What distance must it be kept from people?
+
+A28: 2 feet; When a hazardous material has a transport index of 1.1, it must be kept at least 2 feet away from all people and cargo space walls.
+
+__________
+
+Q29: Poisons must never be loaded alongside foodstuffs. What is the official definition of foodstuffs?
+
+A29: Anything you swallow, excluding mouthwash, toothpaste, and skin creams; Poison must never be loaded in the same vehicle as anything you swallow (except for mouthwash, toothpaste, and skin creams, none of which are classed as “foodstuffs.”) The one exception to this rule is if the poison has been overpacked in an approved manner.
+
+__________
+
+Q30: Charged storage batteries should never be loaded in the same vehicle with which of the following?
+
+A30: Class A explosives should never be loaded in the same vehicle as charged storage batteries because it could prove a major hazard to the safety of not only the driver but also surrounding people.
+
+__________
+
+Q31: What quantity of solid must a vehicle or container be able to hold in order to be considered a bulk packaging?
+
+A31: 881.9 pounds; To be considered a bulk packaging, the freight container or transport vehicle must be capable of holding 881.9 pounds of solid, or have a water capacity of 1,000+ pounds for a gas.
+
+__________
+
+Q32: When someone is loading or unloading a cargo tank, there must always be another individual watching. How close must they be to the vehicle?
+
+A32: within 25 feet; The person observing the loading/unloading of a cargo tank must be alert, have a clear view of the tank, know the hazards, be aware of emergency procedures, be able to (and authorized to) move the tank, as well as being within 25 feet from the tank.
+
+__________
+
+Q33: 
+
+A33:
+
