@@ -9,7 +9,7 @@ Author: monsterb
 
 Q1: How are bulkheads different than baffles?
 
-A1: Baffled liquid tanks have bulkheads in them with holes that let the liquid flow through. The baffles help to control the forward and backward liquid surge. Side-to-side surge can still occur. This can cause a roll over. 
+A1: Bulkheads are liquid-tight and baffles have holes in them. Baffled liquid tanks have bulkheads in them with holes that let the liquid flow through. The baffles help to control the forward and backward liquid surge. Side-to-side surge can still occur. This can cause a roll over. 
 
 ----------
 
