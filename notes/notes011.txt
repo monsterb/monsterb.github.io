@@ -1,0 +1,61 @@
+Title: Tanker Pratice Questions gathered from the interwebs.
+Date: Feb. 27th, 2017
+URL: https://monsterb.github.io/notes/notes011.txt
+License: unknown
+Sources: Section 8 of the Indiana Commercial Driver License Manual 2005 Rev. July 2014 (Question 1 thru 7)
+Author: monsterb
+
+----------
+
+Q1: How are bulkheads different than baffles?
+
+A1: Baffled liquid tanks have bulkheads in them with holes that let the liquid flow through. The baffles help to control the forward and backward liquid surge. Side-to-side surge can still occur. This can cause a roll over. 
+
+----------
+
+Q2: Should a tank vehicle take curves, on ramps, or off ramps at the posted speed limits?
+
+A2: No. Tests have shown that tankers can turn over at the speed limits posted for curves. Take highway curves and on ramp/off ramp curves well below the posted speeds.
+
+----------
+
+Q3: How are smooth bore tankers different to drive than those with baffles?
+
+A3: Un-baffled liquid tankers (sometimes called "smooth bore" tanks) have nothing inside to slow down the flow of the liquid. Therefore, forward-andback surge is very strong. Un-baffled tanks are usually those that transport food products (milk, for example). (Sanitation regulations forbid the use of baffles because of the difficulty in cleaning the inside of the tank.) Be extremely cautious (slow and careful) in driving smooth bore tanks, especially when starting and stopping.
+
+----------
+
+Q4: What three things determine how much liquid you can load?
+
+A4: Density, Outage, Legal Weight Limits
+
+----------
+
+Q5: What is outage?
+
+A5: Never load a cargo tank totally full. Liquids expand as they warm and you must leave room for the expanding liquid. This is called "outage." Since different liquids expand by different amounts, they require different amounts of outage. You must know the outage requirement when hauling liquids in bulk.
+
+----------
+
+Q6: How can you help control surge?
+
+A6: Start, slow down, and stop very smoothly. Also, make smooth turns and lane changes.
+
+Keep a steady pressure on the brakes. Do not release too soon when coming to a stop.
+
+Brake far in advance of a stop and increase your following distance.
+
+If you must make a quick stop to avoid a crash, use controlled or stab braking. 
+
+----------
+
+Q7: What two reasons make special care necessary when driving tank vehicles?
+
+A7: The high center of gravity and liquid movement. 
+
+----------
+
+Q8:
+
+A8:
+
