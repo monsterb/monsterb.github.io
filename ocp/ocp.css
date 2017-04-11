@@ -3,7 +3,7 @@
 /*
 	Maintainer: monsterb
 	Contact: UNIX.S3C (at) gmail (dot) com
-	URL: http://monsterb.github.io/ocp/
+	URL: https://monsterb.github.io/ocp/
 	*/
 
 * { line-height: 1.5; margin: 0px; padding: 0px; }
@@ -78,11 +78,11 @@ a.tooltip span { display:none; }
 
 
 #topbar
-{ 
+{
 	margin: 0 auto 0 auto;
-	white-space: nowrap; 
-	line-height: 2.0; 
-	height: 30px; 
+	white-space: nowrap;
+	line-height: 2.0;
+	height: 30px;
 	color: #ffffff;
 	background-image : url('blackbar.gif');
 	text-align: center;
@@ -94,33 +94,33 @@ a.tooltip span { display:none; }
 
 
 #topbar a
-{ 
+{
 	text-decoration: none;
 	font-weight: bold;
-	position: relative; 
-	height: 30px; 
-	line-height: 2.0; 
+	position: relative;
+	height: 30px;
+	line-height: 2.0;
 	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
-	text-align: center; 
+	text-align: center;
 	border-left: 1px solid transparent ;
-	border-right: 1px solid transparent ; 
+	border-right: 1px solid transparent ;
 }
 
 
 #topbar a:hover
-{ 
-	padding-top: 6px; 
-	padding-bottom: 8px; 
+{
+	padding-top: 6px;
+	padding-bottom: 8px;
 	background-color: black;
 	border-left: 1px solid #ffffff;
-	border-right: 1px solid #ffffff; 
-	height: 100% ; 
+	border-right: 1px solid #ffffff;
+	height: 100% ;
 }
 
 
-#main 
+#main
 {
 	float: left;
 	margin: 0 0 0 0;
@@ -129,7 +129,7 @@ a.tooltip span { display:none; }
 	padding: 19px;
 }
 
-#playogg 
+#playogg
 {
 	clear:both;
 	text-align:center;
@@ -140,7 +140,7 @@ a.tooltip span { display:none; }
 	padding-top: 15px;
 }
 
-#footer 
+#footer
 {
 	clear:both;
 	text-align:center;
