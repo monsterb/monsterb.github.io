@@ -1,0 +1,33 @@
+ZFS - add drives (Work in progress)
+
+
+1.) Check the current partition state of the disk:
+
+$ gpart show ada0
+
+----------
+
+2.) Destroy:
+
+# gpart destroy -F ada0
+
+Make sure it's destroyed.
+
+$ gpart show ada0
+
+Output:
+gpart: No such geom: ada0.
+
+----------
+
+3.) Partition new drive:
+
+$ sudo gpart create -s gpt ada0
+$ sudo gpart add -s 6291456 -t freebsd-swap -l swap00 ada0
+$ sudo gpart add -t freebsd-zfs -l disk00 ada0
+
+---------
+
+4.) Creating the pool:
+
+# zpool create -f storage raidz1 gpt/disk00 gpt/disk01

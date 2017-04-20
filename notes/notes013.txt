@@ -1,0 +1,51 @@
+Title: Erase, Format, & Burn Ubuntu Server 16.04 LTS iso to USB Flash Drive on KDE Neon (based on Ubuntu LTS).
+Date: April 20, 2017
+URL: https://monsterb.github.io/notes/notes013.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+1.) Identify the USB Flash Drive with 'lsblk' command:
+
+  $ lsblk
+
+Output:
+
+
+
+
+2.) Erase everything on the USB Flash Drive:
+
+  $ sudo dd if=/dev/zero of=/dev/sdb bs=4k && sync
+
+
+
+
+3.) Make a new partition table on the USB Flash Drive:
+
+  $ sudo fdisk /dev/sdb
+
+'o' to create a new empty DOS partition table.
+'n' to add a new partition.
+'w' to write table to disk and exit.
+
+
+
+
+4.) Format USB Flash Drive with FAT32:
+
+  $ sudo mkfs.vfat /dev/sdb1
+
+
+
+
+5.) Write Ubuntu Server 16.04 iso to your USB flash drive:
+
+  $ sudo dd if=ubuntu-16.04.2-server-amd64.iso of=/dev/sdb
+
+
+
+
+6.) Eject USB Flash Drive:
+
+  $ sudo eject /dev/sdb
