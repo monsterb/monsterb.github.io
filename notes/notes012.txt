@@ -1,33 +1,60 @@
-ZFS - add drives (Work in progress)
+Title: Erase, Format, & Burn Ubuntu Server 16.04 LTS iso to USB Flash Drive on KDE Neon (based on Ubuntu 16.04 LTS).
+Date: April 20, 2017
+Updated: April 21, 2017
+URL: https://monsterb.github.io/notes/notes012.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
 
 
-1.) Check the current partition state of the disk:
+1.) Identify the USB Flash Drive with 'lsblk' command (My 2GB USB Flash Drive is 'sdb'.):
 
-$ gpart show ada0
-
-----------
-
-2.) Destroy:
-
-# gpart destroy -F ada0
-
-Make sure it's destroyed.
-
-$ gpart show ada0
+  $ lsblk
 
 Output:
-gpart: No such geom: ada0.
 
-----------
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda      8:0    0 465.8G  0 disk
+├─sda1   8:1    0 459.8G  0 part /
+└─sda2   8:2    0     6G  0 part [SWAP]
+sdb      8:16   1   1.9G  0 disk
+├─sdb1   8:17   1   829M  0 part
+└─sdb2   8:18   1   2.4M  0 part
+sr0     11:0    1  1024M  0 rom
 
-3.) Partition new drive:
 
-$ sudo gpart create -s gpt ada0
-$ sudo gpart add -s 6291456 -t freebsd-swap -l swap00 ada0
-$ sudo gpart add -t freebsd-zfs -l disk00 ada0
 
----------
+2.) Erase everything on the USB Flash Drive (optional):
 
-4.) Creating the pool:
+  $ sudo dd if=/dev/zero of=/dev/sdb bs=4k && sync
 
-# zpool create -f storage raidz1 gpt/disk00 gpt/disk01
+
+
+
+3.) Make a new partition table on the USB Flash Drive:
+
+  $ sudo fdisk /dev/sdb
+
+'o' to create a new empty DOS partition table.
+'n' to add a new partition.
+'w' to write table to disk and exit.
+
+
+
+
+4.) Format USB Flash Drive with FAT32:
+
+  $ sudo mkfs.vfat /dev/sdb1
+
+
+
+
+5.) Write Ubuntu Server 16.04 iso to USB Flash Drive:
+
+  $ sudo dd if=ubuntu-16.04.2-server-amd64.iso of=/dev/sdb
+
+
+
+
+6.) Eject USB Flash Drive:
+
+  $ sudo eject /dev/sdb

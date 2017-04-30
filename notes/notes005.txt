@@ -15,7 +15,7 @@ Go to http://www.geforce.com/drivers and download the proper binary drivers for 
 
 Make the binary executable:
 
-$ chmod +x NVIDIA-Linux-x86_64-331.20.run
+  $ chmod +x NVIDIA-Linux-x86_64-331.20.run
 
 
 
@@ -24,7 +24,7 @@ $ chmod +x NVIDIA-Linux-x86_64-331.20.run
 
 gcc, make, and kernel-devel
 
-$ sudo zypper install gcc make kernel-devel
+  $ sudo zypper install gcc make kernel-devel
 
 
 
@@ -40,11 +40,11 @@ Step 1: Edit /etc/sysconfig/kernel and set "NO-KMS-IN-INITRD = yes".
 
 Run mkinitrd to re-create the necessary initrd file:
 
-# mkinitrd
+  # mkinitrd
 
 Step 2: Edit the file /etc/default/grub and add nomodeset to GRUB_CMDLINE_LINUX_DEFAULT=. Run the command "grub2-mkconfig" to re-create the /boot/grub2/grub.cfg file.
 
-# grub2-mkconfig
+  # grub2-mkconfig
 
 
 
@@ -56,11 +56,10 @@ Add "blacklist nouveau" to /etc/modprobe.d/50-blacklist.conf
 
 6.) Install the binary driver:
 
-# ./NVIDIA-Linux-x86_64-331.20.run
+  # ./NVIDIA-Linux-x86_64-331.20.run
 
 
 
 Finally! Reboot.
 
-# reboot
-
+  # reboot

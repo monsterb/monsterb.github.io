@@ -1,51 +1,28 @@
-Title: Erase, Format, & Burn Ubuntu Server 16.04 LTS iso to USB Flash Drive on KDE Neon (based on Ubuntu LTS).
-Date: April 20, 2017
+Title: Set 'nomodeset' kernel boot option in grub2.
+Date: April 21, 2017
 URL: https://monsterb.github.io/notes/notes013.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
 
-
-1.) Identify the USB Flash Drive with 'lsblk' command:
-
-  $ lsblk
-
-Output:
+ Ubuntu Server 16.04 LTS black or flickering screen on boot? Add 'nomodeset' to grub2 config. The kernel mode setting 'nomodeset' instructs the kernel not to load any video drivers during
+the boot process and use the BIOS mode instead.
 
 
 
+1.) Add 'nomodeset' boot options to the GRUB_CMDLINE_LINUX_DEFAULT line:
 
-2.) Erase everything on the USB Flash Drive:
+  $ nano /etc/default/grub
 
-  $ sudo dd if=/dev/zero of=/dev/sdb bs=4k && sync
-
-
-
-
-3.) Make a new partition table on the USB Flash Drive:
-
-  $ sudo fdisk /dev/sdb
-
-'o' to create a new empty DOS partition table.
-'n' to add a new partition.
-'w' to write table to disk and exit.
+GRUB_DEFAULT=0
+#GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=10
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
+GRUB_CMDLINE_LINUX=""
 
 
 
+2.) Update your grub2 configuration:
 
-4.) Format USB Flash Drive with FAT32:
-
-  $ sudo mkfs.vfat /dev/sdb1
-
-
-
-
-5.) Write Ubuntu Server 16.04 iso to your USB flash drive:
-
-  $ sudo dd if=ubuntu-16.04.2-server-amd64.iso of=/dev/sdb
-
-
-
-
-6.) Eject USB Flash Drive:
-
-  $ sudo eject /dev/sdb
+  $ sudo update-grub

@@ -11,7 +11,7 @@ Replace sdX in the following instructions with the device name for the SD card a
 
 1.) Start fdisk to partition the SD card:
 
-# fdisk /dev/sdX
+  # fdisk /dev/sdX
 
 At the fdisk prompt, delete old partitions and create a new one:
     a.) Type o. This will clear out any partitions on the drive.
@@ -20,38 +20,38 @@ At the fdisk prompt, delete old partitions and create a new one:
     d.) Type t, then c to set the first partition to type W95 FAT32 (LBA).
     e.) Type n, then p for primary, 2 for the second partition on the drive, and then press ENTER twice to accept the default first and last sector.
     f.) Write the partition table and exit by typing w.
-    
-    
+
+
 2.) Create and mount the FAT filesystem:
 
-# mkfs.vfat /dev/sdX1
-# mkdir boot
-# mount /dev/sdX1 boot
+  # mkfs.vfat /dev/sdX1
+  # mkdir boot
+  # mount /dev/sdX1 boot
 
 
 3.) Create and mount the ext4 filesystem:
 
-# mkfs.ext4 /dev/sdX2
-# mkdir root
-# mount /dev/sdX2 root
+  # mkfs.ext4 /dev/sdX2
+  # mkdir root
+  # mount /dev/sdX2 root
 
 
 4.) Download and extract the root filesystem (as root, not via sudo):
 
-# wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.tar.gz
-# pacman -S bsdtar
-# bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
-# sync
+  # wget http://archlinuxarm.org/os/ArchLinuxARM-rpi-latest.tar.gz
+  # pacman -S bsdtar
+  # bsdtar -xpf ArchLinuxARM-rpi-latest.tar.gz -C root
+  # sync
 
 
 5.) Move boot files to the first partition:
 
-# mv root/boot/* boot
+  # mv root/boot/* boot
 
 
 6.) Unmount the two partitions:
 
-# umount boot root
+  # umount boot root
 
 
 7.) Insert the SD card into the Raspberry Pi, connect ethernet, and apply 5V power.
@@ -67,4 +67,4 @@ Things to do after installation:
 
 1.) Set Time Zone:
 
-# timedatectl set-timezone America/Chicago
+  # timedatectl set-timezone America/Chicago

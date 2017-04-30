@@ -12,31 +12,31 @@ Caution: Use this hard to follow how-to at your own risk. This worked for me on 
 
 Step 1: Install the necessary tools and dependencies.
 
-# sudo zypper ncurces-devel rpm-build
+  # sudo zypper ncurces-devel rpm-build
 
 
 
 Step 2: Download the latest stable kernel from kernel.org.
 
-$ wget "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.5.tar.xz"
+  $ wget "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.5.tar.xz"
 
 
 
 Step 3: Extract/Unpack the kernel source code.
 
-$ tar -Jxvf linux-3.12.5.tar.xz
+  $ tar -Jxvf linux-3.12.5.tar.xz
 
 
 
 Step 4: Copy the kernel source code to /usr/src/.
 
-$ sudo cp -r linux-3.12.5 /usr/src/
+  $ sudo cp -r linux-3.12.5 /usr/src/
 
 
 
 Step 5: Change into /usr/src/linux-3.12.5/.
 
-# cd /usr/src/linux-3.12.5/
+  # cd /usr/src/linux-3.12.5/
 
 
 
@@ -44,12 +44,12 @@ Step 6: Configure the kernel.
 
 If this is your first time configuring the Linux kernel, I would recommend you copy your ".config" from your existing kernel. If your experienced at configuring the Linux kernel use "make mrproper" to configure your kernel from scratch. "make mrproper" will give you a clean default ".config".
 
-# cp /boot/config-`uname -r` .config
+  # cp /boot/config-`uname -r` .config
 
 
 If you need to make changes to the ".config" use "make menuconfig".
 
-# make menuconfig
+  # make menuconfig
 
 
 If you would like to change the EXTRAVERSION field: Edit the "Makefile".. I changed mine to "-kermit" since Linus named this kernel "One Giant Leap for Frogkind".
@@ -64,7 +64,7 @@ NAME = One Giant Leap for Frogkind
 
 Step 7: Build the kernel package.
 
-# make rpm
+  # make rpm
 
 
 Before the build process begins you will be asked some questions about some new kernel features.. Read carefully!
@@ -74,16 +74,16 @@ Step 8: Install your new kernel.
 
 If everything worked out.. you will have a new kernel RPM in "/usr/src/packages/RPMS/x86_64/".
 
-# rpm -ivh kernel-3.12.5_kermit_4_desktop-2.x86_64.rpm
+  # rpm -ivh kernel-3.12.5_kermit_4_desktop-2.x86_64.rpm
 
 
 and build the initrd file. The initrd is the "initial ramdisk". It is enough files stored in a ramdisk to store needed drivers. You need the drivers so that the kernel can mount / and start init.
 
-# mkinitrd
+  # mkinitrd
 
 
 and add boot entry to grub2.
 
-# grub2-mkconfig
+  # grub2-mkconfig
 
 That's it!! Reboot into your new kernel.
