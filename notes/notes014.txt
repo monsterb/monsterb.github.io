@@ -1,0 +1,26 @@
+Title: What OpenBSD version are you running?
+Date: May 1, 2017
+URL: https://monsterb.github.io/notes/notes014.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+What OpenBSD version are you running?
+
+
+
+1.) You can use commands "uname -mrs" or "sysctl kern.version".
+
+  # uname -mrs
+
+  or
+
+  # sysctl kern.version
+
+Output:
+
+OpenBSD 6.0 amd64
+
+or
+
+kern.version=OpenBSD 6.0 (GENERIC.MP) #2319: Tue Jul 26 13:00:43 MDT 2016
+    deraadt@amd64.openbsd.org:/usr/src/sys/arch/amd64/compile/GENERIC.MP
