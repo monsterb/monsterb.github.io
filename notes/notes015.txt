@@ -1,0 +1,14 @@
+Title: Upload your Garmin Forerunner 10 activities on Linux.
+Date: August 13, 2017
+URL: https://monsterb.github.io/notes/notes015.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+- Plug-in your Garmin Forerunner 10 to your Linux box. It mounts as a USB file system.
+- Go to https://connect.garmin.com/.
+- Log in.
+- Click on "Activities".
+- On the right, above all of your activities, click the "Import" link.
+- Go to the Garmin USB deivce.
+- Go into the the "Activities" folder.
+- Select the most recent .fit file and upload.
