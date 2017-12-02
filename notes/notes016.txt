@@ -1,0 +1,9 @@
+Title: 2011 Chevrolet Equinox LT 2.4l Maintenance Log
+Date: Dec. 02, 2017
+URL: https://monsterb.github.io/notes/notes016.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+
+Mileage     |     Date     |     Work Performed
+83272          10.28.2017       Air Filter, Battery, Front Brakes (Rotors, Pads), Rotate Front Tires
