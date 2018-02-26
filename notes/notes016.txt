@@ -1,6 +1,6 @@
 Title: 2011 Chevrolet Equinox LT 2.4l Maintenance Log
 Date: Dec. 02, 2017
-Updated: Dec. 09, 2017
+Updated: Feb. 25, 2018
 URL: https://monsterb.github.io/notes/notes016.txt
 License: http://creativecommons.org/licenses/by-sa/4.0/
 Author: monsterb
@@ -9,3 +9,5 @@ Author: monsterb
 Mileage     |     Date     |     Work Performed
 
 83272          10.28.2017       Air Filter (ECOGARD XA6131), Battery, Front Brakes (New Rotors, Ceramic Pads), Rotated Front Tires
+
+85777          02.25.2018       Oil Change (Bosch Filter 72215WS, 5 Quarts of Quaker State Ultimate Durability 5W30 Full Synthetic Motor Oil)

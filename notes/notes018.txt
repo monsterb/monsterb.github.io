@@ -1,0 +1,53 @@
+Title: What is my public IP address?
+Date: Feb. 25, 2018
+URL: https://monsterb.github.io/notes/notes018.txt
+License: http://creativecommons.org/licenses/by-sa/4.0/
+Author: monsterb
+
+*********************************************************
+
+
+Find out your public IP address from the command line on GNU/Linux using curl, dig, or host.
+
+The 'curl' command:
+
+$ curl -s checkip.dyndns.org | sed 's#.*Address: \(.*\)</b.*#\1#'
+
+or
+
+The 'dig' command:
+
+$ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+
+or
+
+The 'host' command:
+
+$ host myip.opendns.com resolver1.opendns.com
+
+
+*********************************************************
+
+
+Find out your public IP address from a internet search engine.
+
+DuckDuckGo
+https://duckduckgo.com/?q=ip
+
+google
+https://www.google.com/search?q=what is my IP address
+
+
+*********************************************************
+
+
+Find out your public IP address from a website.
+
+Dyn
+http://checkip.dyndns.org/
+
+icannhazip.com
+http://icanhazip.com/
+
+
+*********************************************************
