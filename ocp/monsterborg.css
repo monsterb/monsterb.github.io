@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/*
+	Maintainer: monsterb
+	Contact: UNIX.S3C (at) gmail (dot) com
+	URL: http://monsterb.github.io/ 
+	*/
+
+* { line-height: 1.5; margin: 0px; padding: 0px; }
+
+html, body
+{
+	margin:20px 0 25px 0;
+	padding:0;
+	color:silver;
+	font-family:'Lucida Console','Bitstream VeraSans Mono','DejaVu Sans Mono',monospace;
+	font-size: 14px;
+	font-weight:500;
+	line-height:1.5;
+        background: #393939;
+	background: -moz-radial-gradient(circle, gray, black);
+	background: -webkit-gradient(radial, center center, 0, center center, 460, from(gray), to(black));
+	background: -webkit-radial-gradient(circle, gray, black);
+}
+
+a:link { color: #ffffff; }
+a:hover { color: #ffffff; background-color:  #129793; }
+a:visited { color: #ffffff; }
+
+p {
+    word-wrap: break-word;
+}
+
+ul {
+	list-style-type: square;
+	position: relative;
+	margin-left: 1em;
+	padding-left: 0;
+	color: silver;
+}
+
+a.tooltip { position:relative; }
+a.tooltip span { display:none; }
+a.tooltip:hover span, a.tooltip:focus span
+{
+	display:block;
+	position:absolute;
+	border:1px solid silver;
+	width:275px;
+	bottom:50px;
+	right:50px;
+	padding:5px;
+	color:silver;
+	background:#0f0f0f;
+	font-size: 14px;
+}
+
+#container
+{
+	position: relative;
+	border-width: 1px;
+	border-style: solid;
+	border-color: silver;
+	width: 875px;
+	min-height: 700px;
+	margin:0 auto;
+	background-color: #0f0f0f;
+}
+
+#header
+{
+	margin: 0 auto 0 auto;
+	padding: 10px;
+	height: 115px;
+	text-align: center;
+	background-color: black;
+}
+
+
+#topbar
+{ 
+	margin: 0 auto 0 auto;
+	white-space: nowrap; 
+	line-height: 2.0; 
+	height: 30px; 
+	color: #ffffff;
+	background-image : url('blackbar.gif');
+	text-align: center;
+	border-width: 1px;
+	border-color: silver;
+	border-top-style: solid;
+	border-bottom-style: solid;
+}
+
+
+#topbar a
+{ 
+	text-decoration: none;
+	font-weight: bold;
+	position: relative; 
+	height: 30px; 
+	line-height: 2.0; 
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: center; 
+	border-left: 1px solid transparent ;
+	border-right: 1px solid transparent ; 
+}
+
+
+#topbar a:hover
+{ 
+	padding-top: 6px; 
+	padding-bottom: 8px; 
+	background-color: black;
+	border-left: 1px solid #ffffff;
+	border-right: 1px solid #ffffff; 
+	height: 100% ; 
+}
+
+
+#main 
+{
+	float: left;
+	margin:10px 5px 10px 10px;
+	width: 645px;
+	min-height: 600px;
+	padding: 5px;
+}
+
+#favorites
+
+{
+	float: right;
+	margin:10px 10px 10px 5px;
+	width: 175px;
+	min-height: 600px;
+	padding: 5px;
+	font-size: 12px;
+}
+
+#footer 
+{
+	clear:both;
+	text-align:center;
+	font-size: small;
+	font-weight: bold;
+	background-color: black;
+	padding: 5px;
+}
