@@ -43,7 +43,7 @@ ul {
 	margin-left: 1em;
 	padding-left: 0;
 }
-
+*/
 li:before {
 	content: "\2666";
 	position: absolute;
@@ -51,7 +51,7 @@ li:before {
 	color: #a20000;
 	margin-right: 5px;
 }
-
+/*
 li {
 	margin: 25px 0;
 }
