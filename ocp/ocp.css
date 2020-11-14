@@ -28,6 +28,7 @@ a:link { color: #ffffff; }
 a:hover { color: #ffffff; background-color: red; }
 a:visited { color: #ffffff; }
 
+/*
 ul {
 	list-style-type: none;
 	position: relative;
@@ -46,7 +47,15 @@ li:before {
 li {
 	margin: 25px 0;
 }
+*/
 
+ul {
+	list-style-type: square;
+	position: relative;
+	margin-left: 1em;
+	padding-left: 0;
+	color: red;
+}
 
 a.tooltip { position:relative; }
 a.tooltip span { display:none; }
