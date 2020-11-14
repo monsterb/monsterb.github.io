@@ -33,7 +33,7 @@ ul {
 	position: relative;
 	margin-left: 1em;
 	padding-left: 0;
-	color: red;
+	color: silver;
 }
 
 /*
@@ -43,7 +43,7 @@ ul {
 	margin-left: 1em;
 	padding-left: 0;
 }
-*/
+
 li:before {
 	content: "\2666";
 	position: absolute;
@@ -53,9 +53,9 @@ li:before {
 }
 
 li {
-	margin: 5px 0;
+	margin: 25px 0;
 }
-
+*/
 
 
 a.tooltip { position:relative; }
