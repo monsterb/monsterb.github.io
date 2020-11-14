@@ -28,33 +28,25 @@ a:link { color: #ffffff; }
 a:hover { color: #ffffff; background-color: red; }
 a:visited { color: #ffffff; }
 
-ul {
-	list-style-type: square;
-	position: relative;
-	margin-left: 1em;
-	padding-left: 0;
-	color: silver;
-}
 
-/*
 ul {
 	list-style-type: none;
 	position: relative;
 	margin-left: 1em;
 	padding-left: 0;
 }
-*/
+
 li:before {
 	content: "\2666";
 	position: absolute;
 	left: -1em;
 	margin-right: 5px;
 }
-/*
+
 li {
 	margin: 25px 0;
 }
-*/
+
 
 
 a.tooltip { position:relative; }
